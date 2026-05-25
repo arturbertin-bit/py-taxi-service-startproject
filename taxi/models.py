@@ -24,7 +24,7 @@ class Car(models.Model):
         verbose_name_plural = "cars"
     
     def __str__(self):
-        return f"{self.manufacturer.name} {self.model}"
+        return self.manufacturer.name + " " + self.model
         
 
 class Driver(AbstractUser):
